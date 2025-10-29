@@ -1,10 +1,18 @@
-"use server"
+
 
 import {signIn, signOut} from "next-auth/react";
 
-export async function signInWithGithub() {
+export async function signUserIn() {
     try {
          return  signIn("github")
+
+    }catch (e) {
+        console.log("Error",e)
+    }
+}
+export async function signUserOut() {
+    try {
+         return  signOut()
 
     }catch (e) {
         console.log("Error",e)
@@ -28,3 +36,6 @@ export async function signOutAction() {
         console.error("SignOut error:", e);
     }
 }
+
+
+export {createTopic}from "./create-topic"

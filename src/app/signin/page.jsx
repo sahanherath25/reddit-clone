@@ -17,7 +17,7 @@ export default function SignInPage() {
 
 
     return (
-        <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white">
+        <div className="w-full flex min-h-screen items-center justify-center bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white">
             {/* Background Blobs */}
             <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
