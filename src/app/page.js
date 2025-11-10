@@ -1,9 +1,10 @@
-
 import {authOptions} from "@/app/api/auth/[...nextauth]/route";
 import {getServerSession} from "next-auth";
 import Profile from "@/components/Profile";
 import React from "react";
 import TopicsCreateForm from "@/components/topics/TopicsCreateForm";
+import TopicsList from "@/components/topics/TopicsList";
+import PostCreateForm from "@/components/posts/PostCreateForm";
 
 
 export default async function Home() {
@@ -18,7 +19,7 @@ export default async function Home() {
 
             <div>
                 <TopicsCreateForm/>
-
+                <TopicsList/>
 
             </div>
 

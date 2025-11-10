@@ -39,3 +39,4 @@ export async function signOutAction() {
 
 
 export {createTopic}from "./create-topic"
+export {createPost}from "./create-post"
